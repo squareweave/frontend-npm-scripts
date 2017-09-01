@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+    web:
+        stop_signal: SIGKILL
+        ports:
+            - '3000:3000'
+            - '3001:3001'
+            - '80:80'
+        volumes:
+            - "./app:/app/app"
+            - "./package.json:/app/package.json"
+            - "./yarn.lock:/app/yarn.lock"
+            - "./.editorconfig:/app/.editorconfig"
+            - "./gulpfile.babel.js:/app/gulpfile.babel.js"
+        build:
+            context: .

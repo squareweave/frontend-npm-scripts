@@ -1,0 +1,7 @@
+app/assets/css/*
+*.min.js
+*.dist.js
+svg-sprite.svg
+node_modules
+*.idea/
+dist

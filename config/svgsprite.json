@@ -1,0 +1,16 @@
+{
+    "dest": "app/assets/images/sprite",
+    "log": "info",
+    "svg": {
+      "rootAttributes": {
+        "width": 0,
+        "height": 0,
+        "class": "svg-sprite"
+      }
+    },
+    "mode": {
+        "symbol": {
+            "sprite": "svg-sprite.svg"
+        }
+    }
+}
