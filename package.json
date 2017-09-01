@@ -137,7 +137,7 @@
     "js:watch": "watchify --verbose --debug app/assets/js/app.js -t eslintify -t [ babelify ] -o app/assets/js/app.dist.js",
     "images": "imagemin app/assets/images/* --out-dir=dist/assets/images",
     "copy": "copyfiles -u 1 app/**/*.{css,html,js,otf,ttf,woff2,jpg} dist/",
-    "browsersync": "browser-sync start --server 'app' --files 'app'",
+    "browsersync": "browser-sync start  --port 80 --server 'app' --files 'app'",
     "prebuild": "npm run clean",
     "build": "concurrently \"npm run css -- --output-style compressed\" \"npm run js:browserify\"",
     "postbuild": "postcss app/assets/css/*.css -c config/postcss.config.js --dir app/assets/css && npm run copy && npm run size",

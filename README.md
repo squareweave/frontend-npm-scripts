@@ -6,7 +6,7 @@ thereby getting a lot more power out of NPM, unconstrained by gulp's streaming a
 ## Install/Run
 
 1. `docker-compose up`
-2. Access at `http://localhost:3000`
+2. Access at `http://localhost`
 
 ## Build
 
