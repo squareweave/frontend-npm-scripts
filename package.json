@@ -139,10 +139,10 @@
     "copy": "copyfiles -u 1 app/**/*.{css,html,js,otf,ttf,woff2,jpg} dist/",
     "browsersync": "browser-sync start --server 'app' --files 'app'",
     "prebuild": "npm run clean",
-    "prewatch": "npm run clean && npm run css",
     "build": "concurrently \"npm run css -- --output-style compressed\" \"npm run js:browserify\"",
     "postbuild": "postcss app/assets/css/*.css -c config/postcss.config.js --dir app/assets/css && npm run copy && npm run size",
-    "watch": "concurrently \"npm run css -- --source-map-embed true -w\" \"npm run js:watch\" \"npm run browsersync\""
+    "watch": "concurrently \"npm run css -- --source-map-embed true -w\" \"npm run js:watch\" \"npm run browsersync\"",
+    "prewatch": "npm run clean && npm run css",
   },
   "author": "",
   "license": "ISC"
