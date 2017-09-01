@@ -1,22 +1,790 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Experimentaller</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/assets/css/main.css">
-    </head>
-    <body>
-        
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <!-- Add your site or application content here -->
-        <h1>
-          Experimenting with NPM scripts.
-        </h1>
-        <script src="/assets/js/app.dist.js"></script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Experimentaller</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- Add your site or application content here -->
+<main class="w-100 bt b--black-10 bg-white">
+    <section class="bg-black-0125 w-100">
+        <section>
+            <div class="ph3 ph5-ns pt5" id="style">
+                <div class="mw9 center overflow-auto">
+                    <h1>Tachyons! </h1>
+                    <h3 class="f6 ttu fw6 mb0 mt5 bb pb2">Typography</h3>
+                    <article class="dt-ns dt--fixed-ns">
+                        <div class="dtc-ns v-mid overflow-auto">
+                            <h1 class="f1 lh-title">Level 1 Heading</h1>
+                            <h2 class="f2 lh-title">Level 2 Heading</h2>
+                            <h3 class="f3 lh-title">Level 3 Heading</h3>
+                            <h4 class="f4 lh-title">Level 4 Heading</h4>
+                            <h5 class="f5 lh-title">Level 5 Heading</h5>
+                            <h6 class="f6 lh-title">Level 6 Heading</h6>
+                        </div>
+                        <div class="dtc-ns v-mid">
+<pre class="ba b--black-05  pa2 overflow-auto"><code class="db f6 pa3 lh-copy">
+.f1 { font-size: 3rem; }
+.f2 { font-size: 2.25rem; }
+.f3 { font-size: 1.5rem; }
+.f4 { font-size: 1.25rem; }
+.f5 { font-size: 1rem; }
+.f6 { font-size: .875rem; }
+</code>
+</pre>
+                        </div>
+                    </article>
+                    <article class="mt5">
+                        <h3 class="f6 ttu fw6 mt0 mb3 bb pb2">Type Styles</h3>
+                        <div class="dt-ns dt--fixed-ns">
+                            <div class="dtc v-mid">
+                                <p class="i">Italicize: to write or print (text) in italics.</p>
+                                <p class="b">Some text that needs to be super bold.</p>
+                                <p class="underline">This text wants to be underlined.</p>
+                                <p class="strike">This text should be crossed out.</p>
+                                <p class="ttc">This text should be capitalized.</p>
+                                <p class="ttu">This text should be uppercase.</p>
+                            </div>
+                            <div class="dtc-ns v-mid">
+<pre class="ba b--black-05  pa2 overflow-auto"><code class="db f6 pa3 lh-copy">
+.i {         font-style: italic; }
+.b {         font-weight: bold; }
+.underline { text-decoration: underline; }
+.strike {    text-decoration: line-through; }
+.ttc {       text-transform: capitalize; }
+.ttu {       text-transform: uppercase; }
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="mt5">
+                        <h3 class="f6 ttu fw6 mt0 mb3 bb pb2">Typefaces</h3>
+                        <div class="dt-ns dt--fixed-ns">
+                            <div class="dtc v-mid">
+                                <h4 class="f6 mb0 mt3">system serif</h4>
+                                <p class="serif">a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <h4 class="f6 mb0 mt3">Athelas</h4>
+                                <p class="athelas"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <p class="athelas ttu"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <h4 class="f6 mb0 mt3">georgia</h4>
+                                <p class="georgia"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <p class="georgia ttu"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <h4 class="f6 mb0 mt3">garamond</h4>
+                                <p class="garamond"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <p class="garamond ttu"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <h4 class="f6 mb0 mt3">baskerville</h4>
+                                <p class="baskerville"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <p class="baskerville ttu"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <h4 class="f6 mb0 mt3">calisto</h4>
+                                <p class="calisto"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <p class="calisto ttu"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <h4 class="f6 mb0 mt3">system sans-serif</h4>
+                                <p class="sans-serif"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <p class="sans-serif ttu"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <h4 class="f6 mb0 mt3">Helvetica</h4>
+                                <p class="helvetica"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <p class="helvetica ttu"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <h4 class="f6 mb0 mt3">Avenir Next</h4>
+                                <p class="avenir"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <p class="avenir ttu"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <h4 class="f6 mb0 mt3">Code</h4>
+                                <p class="code"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <p class="code ttu"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <h4 class="f6 mb0 mt3">Courier</h4>
+                                <p class="code"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                                <p class="code ttu"> a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
+                            </div>
+                            <div class="dtc-ns v-mid">
+<pre class="ba b--black-05  pa2 overflow-auto"><code class="db f6 pa3 lh-copy">
+.sans-serif {
+  font-family: -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               helvetica, 'helvetica neue',
+               ubuntu,
+               roboto, noto,
+               'segoe ui', arial,
+               sans-serif;
+}
+.serif { font-family: georgia, times, serif; }
+.code { font-family: Consolas, monaco, monospace; }
+.courier { font-family: 'Courier Next', courier, monospace; }
+.helvetica { font-family: 'helvetica neue', helvetica, sans-serif; }
+.avenir { font-family: 'avenir next', avenir, sans-serif; }
+.athelas { font-family: athelas, georgia, serif; }
+.georgia { font-family: georgia, serif; }
+.times { font-family: times, serif; }
+.bodoni { font-family: "Bodoni MT", serif; }
+.calisto { font-family: "Calisto MT", serif; }
+.garamond { font-family: garamond, serif; }
+.baskerville { font-family: baskerville, serif; }
+
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="mt5">
+                        <h3 class="f6 ttu fw6 mt0 mb3 bb pb2">Measure</h3>
+                        <div class="dt-ns dt--fixed-ns">
+                            <div class="dtc v-mid f6">
+                                <h4 class="mt4 fw6 f6">Wide Measure</h4>
+                                <p class="measure-wide lh-copy">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                                    duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                    sanctus est Lorem ipsum dolor sit amet. </p>
+                                <h4 class="mt4 fw6 f6">Measure</h4>
+                                <p class="measure lh-copy">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                                    duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                    sanctus est Lorem ipsum dolor sit amet. </p>
+                                <h4 class="mt4 fw6 f6">Narrow Measure</h4>
+                                <p class="measure-narrow lh-copy">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                                    aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                                    duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+                                    sanctus est Lorem ipsum dolor sit amet. </p>
+                            </div>
+                            <div class="dtc-ns v-mid">
+<pre class="ba b--black-05  pa2 overflow-auto"><code class="db f6 pa3 lh-copy">
+.measure-wide {   max-width: 34em; }
+.measure {        max-width: 30em; }
+.measure-narrow { max-width: 20em; }
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <article class="mt5 id=" grids
+            ""="">
+            <div class="ph3 ph5-ns">
+                <div class="mw9 center">
+                    <h3 class="f6 ttu fw6 mt0 bb pb2">Grids</h3>
+                    <p class="lh-copy measure">
+                        Floats, widths, and padding can be combined to build a
+                        wide variety of grids. </p>
+                </div>
+            </div>
+            <section class="cf w-100 pv3 f6 ph3 ph4-ns">
+                <div class="mw9 center ph3-ns">
+                    <div class="ph2-ns">
+                        <div class="fl w-100 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-100</code></div>
+                        </div>
+                        <div class="fl w-90 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-90</code></div>
+                        </div>
+                        <div class="fl w-10 pa2">
+                            <div class="outline bg-white tc pv4 truncate no-wrap"><code>fl w-10</code></div>
+                        </div>
+                        <div class="fl w-80 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-80</code></div>
+                        </div>
+                        <div class="fl w-20 pa2">
+                            <div class="outline bg-white tc pv4 truncate no-wrap"><code>fl w-20</code></div>
+                        </div>
+                        <div class="fl w-75 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-75</code></div>
+                        </div>
+                        <div class="fl w-25 pa2">
+                            <div class="outline bg-white tc pv4 truncate no-wrap"><code>fl w-25</code></div>
+                        </div>
+                        <div class="fl w-70 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-70</code></div>
+                        </div>
+                        <div class="fl w-30 pa2">
+                            <div class="outline bg-white tc pv4 truncate no-wrap"><code>fl w-30</code></div>
+                        </div>
+                        <div class="fl w-60 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-60</code></div>
+                        </div>
+                        <div class="fl w-40 pa2">
+                            <div class="outline bg-white tc pv4 truncate no-wrap"><code>fl w-40</code></div>
+                        </div>
+                        <div class="fl w-50 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-50</code></div>
+                        </div>
+                        <div class="fl w-50 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-50</code></div>
+                        </div>
+                        <div class="fl w-third pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-third</code></div>
+                        </div>
+                        <div class="fl w-third pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-third</code></div>
+                        </div>
+                        <div class="fl w-third pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-third</code></div>
+                        </div>
+                        <div class="fl w-third pa2">
+                            <div class="outline bg-white tc pv4 truncate w-100 no-wrap"><code>fl w-third</code></div>
+                        </div>
+                        <div class="fl w-two-thirds pa2">
+                            <div class="outline bg-white tc pv4 truncate w-100 no-wrap"><code>fl w-two-thirds</code>
+                            </div>
+                        </div>
+                        <div class="fl w-25 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-25</code></div>
+                        </div>
+                        <div class="fl w-25 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-25 </code></div>
+                        </div>
+                        <div class="fl w-25 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-25 </code></div>
+                        </div>
+                        <div class="fl w-25 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-25 </code></div>
+                        </div>
+                        <div class="fl w-20 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-20 </code></div>
+                        </div>
+                        <div class="fl w-20 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-20 </code></div>
+                        </div>
+                        <div class="fl w-20 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-20 </code></div>
+                        </div>
+                        <div class="fl w-20 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-20 </code></div>
+                        </div>
+                        <div class="fl w-20 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-20 </code></div>
+                        </div>
+                        <div class="fl w-10 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-10 </code></div>
+                        </div>
+                        <div class="fl w-10 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-10 </code></div>
+                        </div>
+                        <div class="fl w-10 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-10 </code></div>
+                        </div>
+                        <div class="fl w-10 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-10 </code></div>
+                        </div>
+                        <div class="fl w-10 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-10 </code></div>
+                        </div>
+                        <div class="fl w-10 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-10 </code></div>
+                        </div>
+                        <div class="fl w-10 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-10 </code></div>
+                        </div>
+                        <div class="fl w-10 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-10 </code></div>
+                        </div>
+                        <div class="fl w-10 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-10 </code></div>
+                        </div>
+                        <div class="fl w-10 pa2">
+                            <div class="outline bg-white tc pv4"><code>fl w-10 </code></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            </article>
+            <div class="ph3 ph5-ns pt5">
+                <div class="mw9 center overflow-auto">
+                    <article class="mt5">
+                        <h3 class="f6 ttu fw6 mt0 mb3 bb pb2">Colors</h3>
+                        <div class="dt-ns dt--fixed-ns">
+                            <div class="dtc-ns v-mid pr4-ns">
+                                <table class="border-collapse w-100" cellspacing="0" cellpadding="0">
+                                    <tbody class="black-60 f6">
+                                    <tr>
+                                        <td class="bb b--black-05 bg-dark-red pa4"></td>
+                                        <td class="bb b--black-05 ph4 f4 b dark-red">Aa</td>
+                                        <td class="bb b--black-05">--dark-red: #e7040f;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-red pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b red">Aa</td>
+                                        <td class="bb b--black-05">--red: #ff4136;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-light-red pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b light-red">Aa</td>
+                                        <td class="bb b--black-05">--light-red: #ff725c;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-orange pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b orange">Aa</td>
+                                        <td class="bb b--black-05">--orange: #ff6300;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-gold pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b gold">Aa</td>
+                                        <td class="bb b--black-05">--gold: #ffb700;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-yellow pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b yellow">Aa</td>
+                                        <td class="bb b--black-05">--yellow: #ffde37;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-light-yellow pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b light-yellow">Aa</td>
+                                        <td class="bb b--black-05">--light-yellow: #fbf1a9;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-purple pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b purple">Aa</td>
+                                        <td class="bb b--black-05">--purple: #5e2ca5;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-light-purple pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b light-purple">Aa</td>
+                                        <td class="bb b--black-05">--light-purple: #a463f2;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-dark-pink pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b dark-pink">Aa</td>
+                                        <td class="bb b--black-05">--dark-pink: #d5008f;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-hot-pink pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b hot-pink">Aa</td>
+                                        <td class="bb b--black-05">--hot-pink: #ff41b4;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-pink pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b pink">Aa</td>
+                                        <td class="bb b--black-05">--pink: #ff80cc;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-light-pink pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b light-pink">Aa</td>
+                                        <td class="bb b--black-05">--light-pink: #ffa3d7;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-dark-green pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b dark-green">Aa</td>
+                                        <td class="bb b--black-05">--dark-green: #137752;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-green pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b green">Aa</td>
+                                        <td class="bb b--black-05">--green: #19a974;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-light-green pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b light-green">Aa</td>
+                                        <td class="bb b--black-05">--light-green: #9eebcf;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-navy pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b navy">Aa</td>
+                                        <td class="bb b--black-05">--navy: #001b44;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-dark-blue pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b dark-blue">Aa</td>
+                                        <td class="bb b--black-05">--dark-blue: #00449e;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-blue pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b blue">Aa</td>
+                                        <td class="bb b--black-05">--blue: #357edd;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-light-blue pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b light-blue">Aa</td>
+                                        <td class="bb b--black-05">--light-blue: #96ccff;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-lightest-blue pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b lightest-blue">Aa</td>
+                                        <td class="bb b--black-05">--lightest-blue: #cdecff;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-washed-blue pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b washed-blue">Aa</td>
+                                        <td class="bb b--black-05">--washed-blue: #f6fffe;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-washed-green pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b washed-green">Aa</td>
+                                        <td class="bb b--black-05">--washed-green: #e8fdf5;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-washed-yellow pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b washed-yellow">Aa</td>
+                                        <td class="bb b--black-05">--washed-yellow: #fffceb;</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bb b--black-05 bg-washed-red pa4 "></td>
+                                        <td class="bb b--black-05 ph4 f4 b washed-red">Aa</td>
+                                        <td class="bb b--black-05">--washed-red: #ffdfdf;</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="dtc-ns v-mid">
+<pre class="ba b--black-05 pa2 overflow-auto"><code class="db f6 ph3 lh-copy">
+
+.bg-dark-red { background-color: var(--dark-red); }
+.bg-red { background-color: var(--red); }
+.bg-orange { background-color: var(--orange); }
+.bg-gold { background-color: var(--gold); }
+.bg-yellow { background-color: var(--yellow); }
+.bg-purple { background-color: var(--purple); }
+.bg-light-purple { background-color: var(--light-purple); }
+.bg-hot-pink { background-color:  var(--hot-pink); }
+.bg-dark-pink { background-color: var(--dark-pink); }
+.bg-pink { background-color: var(--pink); }
+.bg-dark-green { background-color: var(--dark-green); }
+.bg-green { background-color: var(--green); }
+.bg-navy { background-color: var(--navy); }
+.bg-dark-blue { background-color: var(--dark-blue); }
+.bg-blue { background-color: var(--blue); }
+.bg-light-blue { background-color: var(--light-blue); }
+.bg-lightest-blue { background-color: var(--lightest-blue); }
+.bg-washed-blue { background-color: var(--washed-blue); }
+.bg-washed-green { background-color: var(--washed-green); }
+.bg-washed-yellow { background-color: var(--washed-yellow); }
+.bg-light-pink { background-color: var(--light-pink); }
+.bg-light-yellow { background-color: var(--light-yellow); }
+.bg-light-red { background-color: var(--light-red); }
+
+.dark-red { color: var(--dark-red); }
+.red { color: var(--red); }
+.orange { color: var(--orange); }
+.gold { color: var(--gold); }
+.yellow { color: var(--yellow); }
+.purple { color: var(--purple); }
+.light-purple { color: var(--light-purple); }
+.hot-pink { color:  var(--hot-pink); }
+.dark-pink { color: var(--dark-pink); }
+.pink { color: var(--pink); }
+.dark-green { color: var(--dark-green); }
+.green { color: var(--green); }
+.navy { color: var(--navy); }
+.dark-blue { color: var(--dark-blue); }
+.blue { color: var(--blue); }
+.light-blue { color: var(--light-blue); }
+.lightest-blue { color: var(--lightest-blue); }
+.washed-blue { color: var(--washed-blue); }
+.washed-green { color: var(--washed-green); }
+.washed-yellow { color: var(--washed-yellow); }
+.light-pink { color: var(--light-pink); }
+.light-yellow { color: var(--light-yellow); }
+.light-red { color: var(--light-red); }
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="mt5">
+                        <h3 class="f6 ttu fw6 mt0 mb3 bb pb2">Borders</h3>
+                        <div class="dt-ns dt--fixed-ns">
+                            <div class="dtc-ns v-mid">
+                                <div class="ba db mw5 pa3 bg-black-025 mb3 bg-near-white">ba = border on all sides</div>
+                                <div class="bt db mw5 pa3 bg-black-025 mb3 bg-near-white">bt = border top</div>
+                                <div class="br db mw5 pa3 bg-black-025 mb3 bg-near-white">br = border right</div>
+                                <div class="bb db mw5 pa3 bg-black-025 mb3 bg-near-white">bb = border bottom</div>
+                                <div class="bl db mw5 pa3 bg-black-025 mb3 bg-near-white">bl = border left</div>
+                                <div class="bn db mw5 pa3 bg-black-025 mb3 bg-near-white">bn = border none</div>
+                            </div>
+                            <div class="dtc-ns v-mid">
+<pre class="ba b--black-05  pa2 overflow-auto"><code class="db f6 pa3 lh-copy">
+  .ba { border-style: solid; border-width: 1px; }
+  .bt { border-top-style: solid; border-top-width: 1px; }
+  .br { border-right-style: solid; border-right-width: 1px; }
+  .bb { border-bottom-style: solid; border-bottom-width: 1px; }
+  .bl { border-left-style: solid; border-left-width: 1px; }
+  .bn { border-style: none; border-width: 0; }
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="mt5">
+                        <h3 class="f6 ttu fw6 mt0 mb3 bb pb2">Border Styles</h3>
+                        <div class="dt-ns dt--fixed-ns">
+                            <div class="dtc-ns v-mid">
+                                <div class="ba b--dotted db mw5 pa3 mb3 ">dotted</div>
+                                <div class="ba b--dashed db mw5 pa3 mb3 ">dashed</div>
+                                <div class="ba b--solid db mw5 pa3 mb3 ">solid</div>
+                                <div class="ba b--none db mw5 pa3 mb3 ">none</div>
+                            </div>
+                            <div class="dtc-ns v-mid">
+<pre class="ba b--black-05  pa2 overflow-auto"><code class="db f6 pa3 lh-copy">
+.b--dotted { border-style: dotted; }
+.b--dashed { border-style: dashed; }
+.b--solid {  border-style: solid; }
+.b--none {   border-style: none; }
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="mt5">
+                        <h3 class="f6 ttu fw6 mt0 mb3 bb pb2">Border Widths</h3>
+                        <div class="dt-ns dt--fixed-ns">
+                            <div class="dtc-ns v-mid">
+                                <div class="bt db mw5 mb4 bg-near-white">default</div>
+                                <div class="bt bw1 db mw5 mb4 bg-near-white">.125rem</div>
+                                <div class="bt bw2 db mw5 mb4 bg-near-white">.25rem</div>
+                                <div class="bt bw3 db mw5 mb4 bg-near-white">.5rem</div>
+                                <div class="bt bw4 db mw5 mb4 bg-near-white">1rem</div>
+                                <div class="bt bw5 db mw5 mb4 bg-near-white">2rem</div>
+                            </div>
+                            <div class="dtc-ns v-mid">
+<pre class="ba b--black-05  pa2 overflow-auto"><code class="db f6 pa3 lh-copy">
+.bw0 { border-width: 0; }
+.bw1 { border-width: .125rem; }
+.bw2 { border-width: .25rem; }
+.bw3 { border-width: .5rem; }
+.bw4 { border-width: 1rem; }
+.bw5 { border-width: 2rem; }
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="mt5">
+                        <h3 class="f6 ttu fw6 mt0 mb3 bb pb2">Border Colors</h3>
+                        <div class="dt-ns dt--fixed-ns">
+                            <div class="dtc-ns v-mid pr4">
+
+                                <div class="bt black b--black db pt2 pb2 mb3">b--black</div>
+                                <div class="bt black-90 b--black-90 db pt2 pb2 mb3">b--black-90</div>
+                                <div class="bt black-80 b--black-80 db pt2 pb2 mb3">b--black-80</div>
+                                <div class="bt black-70 b--black-70 db pt2 pb2 mb3">b--black-70</div>
+                                <div class="bt black-60 b--black-60 db pt2 pb2 mb3">b--black-60</div>
+                                <div class="bt black-50 b--black-50 db pt2 pb2 mb3">b--black-50</div>
+                                <div class="bt black-40 b--black-40 db pt2 pb2 mb3">b--black-40</div>
+                                <div class="bt black-30 b--black-30 db pt2 pb2 mb3">b--black-30</div>
+                                <div class="bt black-20 b--black-20 db pt2 pb2 mb3">b--black-20</div>
+                                <div class="bt black-10 b--black-10 db pt2 pb2 mb3">b--black-10</div>
+                                <div class="bt black-05 b--black-05 db pt2 pb2 mb3">b--black-05</div>
+                                <div class="bt black-025 b--black-025 db pt2 pb2 mb3">b--black-025</div>
+                                <div class="bt black-0125 b--black-0125 db pt2 pb2 mb3">b--black-0125</div>
+                                <div class="bt near-black b--near-black db pt2 pb2 mb3">b--near-black</div>
+                                <div class="bt dark-gray b--dark-gray db pt2 pb2 mb3">b--dark-gray</div>
+                                <div class="bt mid-gray b--mid-gray db pt2 pb2 mb3">b--mid-gray</div>
+                                <div class="bt gray b--gray db pt2 pb2 mb3">b--gray</div>
+                                <div class="bg-black pa2 db">
+                                    <div class="bt silver silver b--silver db pt2 pb2 mb3">b--silver</div>
+                                    <div class="bt light-silver b--light-silver db pt2 pb2 mb3">b--light-silver</div>
+                                    <div class="bt light-gray b--light-gray db pt2 pb2 mb3">b--light-gray</div>
+                                    <div class="bt near-white b--near-white db pt2 pb2 mb3">b--near-white</div>
+                                    <div class="bt white b--white db pt2 pb2 mb3">b--white</div>
+                                    <div class="bt white-90 b--white-90 db pt2 pb2 mb3">b--white-90</div>
+                                    <div class="bt white-80 b--white-80 db pt2 pb2 mb3">b--white-80</div>
+                                    <div class="bt white-70 b--white-70 db pt2 pb2 mb3">b--white-70</div>
+                                    <div class="bt white-60 b--white-60 db pt2 pb2 mb3">b--white-60</div>
+                                    <div class="bt white-50 b--white-50 db pt2 pb2 mb3">b--white-50</div>
+                                    <div class="bt white-40 b--white-40 db pt2 pb2 mb3">b--white-40</div>
+                                    <div class="bt white-30 b--white-30 db pt2 pb2 mb3">b--white-30</div>
+                                    <div class="bt white-20 b--white-20 db pt2 pb2 mb3">b--white-20</div>
+                                    <div class="bt white-10 b--white-10 db pt2 pb2 mb3">b--white-10</div>
+                                    <div class="bt white-05 b--white-05 db pt2 pb2 mb3">b--white-05</div>
+                                    <div class="bt white-025 b--white-025 db pt2 pb2 mb3">b--white-025</div>
+                                    <div class="bt white-0125 b--white-0125 db pt2 pb2 mb3">b--white-0125</div>
+                                    <div class="bt dark-red b--dark-red db pt2 pb2 mb3">b--dark-red</div>
+                                    <div class="bt red b--red db pt2 pb2 mb3">b--red</div>
+                                    <div class="bt orange b--orange db pt2 pb2 mb3">b--orange</div>
+                                    <div class="bt gold b--gold db pt2 pb2 mb3">b--gold</div>
+                                    <div class="bt yellow b--yellow db pt2 pb2 mb3">b--yellow</div>
+                                    <div class="bt purple b--purple db pt2 pb2 mb3">b--purple</div>
+                                    <div class="bt light-purple b--light-purple db pt2 pb2 mb3">b--light-purple</div>
+                                    <div class="bt hot-pink b--hot-pink db pt2 pb2 mb3">b--hot-pink</div>
+                                    <div class="bt dark-pink b--dark-pink db pt2 pb2 mb3">b--dark-pink</div>
+                                    <div class="bt pink b--pink db pt2 pb2 mb3">b--pink</div>
+                                    <div class="bt dark-green b--dark-green db pt2 pb2 mb3">b--dark-green</div>
+                                    <div class="bt green b--green db pt2 pb2 mb3">b--green</div>
+                                    <div class="bt navy b--navy db pt2 pb2 mb3">b--navy</div>
+                                    <div class="bt dark-blue b--dark-blue db pt2 pb2 mb3">b--dark-blue</div>
+                                    <div class="bt blue b--blue db pt2 pb2 mb3">b--blue</div>
+                                    <div class="bt light-blue b--light-blue db pt2 pb2 mb3">b--light-blue</div>
+                                    <div class="bt lightest-blue b--lightest-blue db pt2 pb2 mb3">b--lightest-blue</div>
+                                    <div class="bt washed-blue b--washed-blue db pt2 pb2 mb3">b--washed-blue</div>
+                                    <div class="bt washed-green b--washed-green db pt2 pb2 mb3">b--washed-green</div>
+                                    <div class="bt washed-yellow b--washed-yellow db pt2 pb2 mb3">b--washed-yellow</div>
+                                    <div class="bt light-pink b--light-pink db pt2 pb2 mb3">b--light-pink</div>
+                                    <div class="bt light-yellow b--light-yellow db pt2 pb2 mb3">b--light-yellow</div>
+                                    <div class="bt light-red b--light-red db pt2 pb2 mb3">b--light-red</div>
+                                    <div class="bt transparent b--transparent db pt2 pb2 mb3">b--transparent</div>
+                                </div>
+                            </div>
+                            <div class="dtc-ns v-mid">
+<pre class="ba b--black-05  pa2 overflow-auto"><code class="db f6 pa3 lh-copy">
+.b--black {        border-color: var(--black); }
+.b--black-90 {   border-color: var(--black-90); }
+.b--black-80 {   border-color: var(--black-80); }
+.b--black-70 {   border-color: var(--black-70); }
+.b--black-60 {   border-color: var(--black-60); }
+.b--black-50 {   border-color: var(--black-50); }
+.b--black-40 {   border-color: var(--black-40); }
+.b--black-30 {   border-color: var(--black-30); }
+.b--black-20 {   border-color: var(--black-20); }
+.b--black-10 {   border-color: var(--black-10); }
+.b--black-05 {   border-color: var(--black-05); }
+.b--black-025 {   border-color: var(--black-025); }
+.b--black-0125 {   border-color: var(--black-0125); }
+.b--near-black {   border-color: var(--near-black); }
+.b--dark-gray {    border-color: var(--dark-gray); }
+.b--mid-gray {     border-color: var(--mid-gray); }
+.b--gray {         border-color: var(--gray); }
+.b--silver {       border-color: var(--silver); }
+.b--light-silver { border-color: var(--light-silver); }
+.b--light-gray {   border-color: var(--light-gray); }
+.b--near-white {   border-color: var(--near-white); }
+.b--white {        border-color: var(--white); }
+.b--white-90 {   border-color: var(--white-90); }
+.b--white-80 {   border-color: var(--white-80); }
+.b--white-70 {   border-color: var(--white-70); }
+.b--white-60 {   border-color: var(--white-60); }
+.b--white-50 {   border-color: var(--white-50); }
+.b--white-40 {   border-color: var(--white-40); }
+.b--white-30 {   border-color: var(--white-30); }
+.b--white-20 {   border-color: var(--white-20); }
+.b--white-10 {   border-color: var(--white-10); }
+.b--white-05 {   border-color: var(--white-05); }
+.b--white-025 {   border-color: var(--white-025); }
+.b--white-0125 {   border-color: var(--white-0125); }
+.b--dark-red { border-color:  var(--dark-red); }
+.b--red { border-color:  var(--red); }
+.b--orange { border-color:  var(--orange); }
+.b--gold { border-color:  var(--gold); }
+.b--yellow { border-color:  var(--yellow); }
+.b--purple { border-color:  var(--purple); }
+.b--light-purple { border-color:  var(--light-purple); }
+.b--hot-pink { border-color:  var(--hot-pink); }
+.b--dark-pink { border-color:  var(--dark-pink); }
+.b--pink { border-color:  var(--pink); }
+.b--dark-green { border-color:  var(--dark-green); }
+.b--green { border-color:  var(--green); }
+.b--navy { border-color:  var(--navy); }
+.b--dark-blue { border-color:  var(--dark-blue); }
+.b--blue { border-color:  var(--blue); }
+.b--light-blue { border-color:  var(--light-blue); }
+.b--lightest-blue { border-color:  var(--lightest-blue); }
+.b--washed-blue { border-color:  var(--washed-blue); }
+.b--washed-green { border-color:  var(--washed-green); }
+.b--washed-yellow { border-color:  var(--washed-yellow); }
+.b--light-pink { border-color:  var(--light-pink); }
+.b--light-yellow { border-color:  var(--light-yellow); }
+.b--light-red { border-color:  var(--light-red); }
+.b--transparent { border-color: var(--transparent); }
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="mt5">
+                        <h3 class="f6 ttu fw6 mt0 mb3 bb pb2">Border Radii</h3>
+                        <div class="dt-ns dt--fixed-ns">
+                            <div class="dtc-ns v-mid">
+                                <div class="ba dib ph4 pv3 mb4  br1">br1</div>
+                                <div class="ba dib ph4 pv3 mb4  br2">br2</div>
+                                <div class="ba dib ph4 pv3 mb4  br3">br3</div>
+                                <div class="ba dib ph4 pv3 mb4  br4">br4</div>
+                                <br>
+                                <div class="dt dt--fixed">
+                                    <div class="dtc v-mid">
+                                        <div class="ba dib mb4 br-100 h3 w3 pa4 tc"></div>
+                                    </div>
+                                    <div class="dtc v-mid">
+                                        <div class="ba dib mb4 ph4 pv3  br-pill">pill</div>
+                                    </div>
+                                </div>
+
+                                <div class="ba br--bottom dib ph4 pv3 mb4 br3">br--bottom</div>
+                                <div class="ba br--top dib ph4 pv3 mb4 br3">br--top</div>
+                                <br>
+                                <div class="ba br--left dib ph4 pv3 mb4 br3">br--left</div>
+                                <div class="ba br--right dib ph4 pv3 mb4 br3">br--right</div>
+                            </div>
+                            <div class="dtc-ns v-mid">
+<pre class="ba b--black-05  pa2 overflow-auto"><code class="db f6 pa3 lh-copy">
+.br0 {        border-radius: 0; }
+.br1 {        border-radius: .125rem; }
+.br2 {        border-radius: .25rem; }
+.br3 {        border-radius: .5rem; }
+.br4 {        border-radius: 1rem; }
+.br-100 {     border-radius: 100%; }
+.br-pill {    border-radius: 9999px; }
+.br--bottom {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.br--top {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.br--right {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.br--left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="mt5">
+                        <h3 class="f6 ttu fw6 mt0 mb3 bb pb2">Hover Animations</h3>
+                        <div class="dt-ns dt--fixed-ns">
+                            <div class="dtc-ns v-mid pr4-ns">
+                                <div class="pa3 bg-black mb3 white grow pointer">Grow</div>
+                                <div class="pa3 bg-black mb3 white dim pointer">Dim</div>
+                            </div>
+                            <div class="dtc-ns v-mid">
+<pre class="ba b--black-05  pa2 overflow-auto"><code class="db f6 pa3 lh-copy">
+.grow {
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.grow:hover,
+.grow:focus {
+  transform: scale(1.05);
+}
+
+.dim {
+  opacity: 1;
+  transition: opacity .15s ease-in;
+}
+.dim:hover,
+.dim:focus {
+  opacity: .5;
+  transition: opacity .15s ease-in;
+}
+</code>
+</pre>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+</main>
+<script src="/assets/js/app.dist.js"></script>
+</body>
 </html>
