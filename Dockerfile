@@ -9,6 +9,6 @@ RUN yarn && \
 
 COPY . /app
 
-VOLUME /app/
+VOLUME /app/app/
 
 CMD npm run watch
