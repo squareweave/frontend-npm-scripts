@@ -142,7 +142,7 @@
     "build": "concurrently \"npm run css -- --output-style compressed\" \"npm run js:browserify\"",
     "postbuild": "postcss app/assets/css/*.css -c config/postcss.config.js --dir app/assets/css && npm run copy && npm run size",
     "watch": "concurrently \"npm run css -- --source-map-embed true -w\" \"npm run js:watch\" \"npm run browsersync\"",
-    "prewatch": "npm run clean && npm run css",
+    "prewatch": "npm run clean && npm run css"
   },
   "author": "",
   "license": "ISC"
