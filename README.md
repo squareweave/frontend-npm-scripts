@@ -17,6 +17,7 @@ npm scripts inside package.json, great flexibility is allowed. The following is 
     - [Uglifyify](https://www.npmjs.com/package/uglifyify) ( for production builds )
 - [Image minification](https://www.npmjs.com/package/imagemin-cli)
 - [Copy](https://www.npmjs.com/package/copyfiles)
+- [Concat](http://npmjs.com/package/concat)
 - [SVG sprite generation](http://npmjs.com/package/svg-sprite)
 - [a11y](https://www.npmjs.com/package/a11y) for Accessibility testing
 - [filesize](https://www.npmjs.com/package/a11y) package displays asset sizes at the end of the production build
