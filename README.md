@@ -13,7 +13,7 @@ npm scripts inside package.json, great flexibility is allowed. The following is 
 		- Config in package.json under `eslintConfig`
     - [Babelify](https://www.npmjs.com/package/babelify) ( env and flow presets )
 		- Config in package.json under `babel` key
-    - [Unflowify](https://www.npmjs.com/package/unflowify) ( to remove unusable static annotations from build)
+    - [Unflowify](https://www.npmjs.com/package/unflowify) ( to remove unusable static annotations from build )
     - [Uglifyify](https://www.npmjs.com/package/uglifyify) ( for production builds )
 - [Image minification](https://www.npmjs.com/package/imagemin-cli)
 - [Copy](https://www.npmjs.com/package/copyfiles)
@@ -37,7 +37,7 @@ npm scripts inside package.json, great flexibility is allowed. The following is 
 ### Why browserify?
 
 Because we tend to make sites, not directly apps so much. That said, there's no reason more npm scripts couldn't be
-added to get webpack packin'. If you would like to see an example of this in action, take a look at the `webpack` branch.'
+added to get webpack packin'.
 
 ### 3rd party dependencies
 
