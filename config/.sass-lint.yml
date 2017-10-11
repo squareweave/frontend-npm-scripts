@@ -5,17 +5,16 @@
 options:
   # Don't merge default rules
   merge-default-rules: false
-  # Set the formatter to 'html'
-  formatter: unix
   # Output file instead of logging results
   # output-file: 'linters/sass-lint.html'
   # Raise an error if more than 50 warnings are generated
   max-warnings: 50
 # File Options
 files:
-  include: 'app/assets/scss/**/*.s+(a|c)ss'
+  include: '**/*.s+(a|c)ss'
   ignore:
     - 'sass/vendor/**/*.*'
+    - 'node_modules/**/*.*'
 # Rule Configuration
 rules:
   extends-before-mixins: 2
@@ -39,7 +38,7 @@ rules:
   indentation:
     - 2
     -
-      size: 2
+      size: 4
   property-sort-order:
     - 1
     -
@@ -51,5 +50,4 @@ rules:
     - 2
     -
       properties:
-        - margin
         - content
