@@ -237,7 +237,7 @@
     "build": "concurrently $npm_package_config_concurrently \"npm run css -- --output-style compressed\" \"npm run js:browserify\"",
     "postbuild": "npm run copy && npm run size",
     "postcss": "postcss $npm_package_config_assets/css/*.css -c config/postcss.config.js --dir $npm_package_config_assets/css",
-    "watch": "concurrently $npm_package_config_concurrently \"npm run browsersync\" \"npm run watch:scss\" \"npm run js:watchify\"",
+    "watch": "npm run build && concurrently $npm_package_config_concurrently \"npm run browsersync\" \"npm run watch:scss\" \"npm run js:watchify\"",
     "local": "npm run build && concurrently $npm_package_config_concurrently \"npm run watch:scss\" \"npm run js:watchify\" \"npm run browsersync\""
   },
   "author": "",
