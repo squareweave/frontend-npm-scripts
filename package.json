@@ -1,248 +1,248 @@
 {
-  "name": "experiments",
-  "version": "1.0.0",
-  "description": "he",
-  "main": "test.js",
-  "sasslintConfig": "config/.sass-lint.yml",
-  "engines": {
-    "node": ">=8.5.0"
-  },
-  "dependencies": {
-    "a11y": "^0.5.0",
-    "autoprefixer": "^7.1.3",
-    "babel-eslint": "^8.0.0",
-    "babel-minify": "^0.2.0",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-flow": "^6.23.0",
-    "babelify": "^7.3.0",
-    "browser-sync": "^2.18.13",
-    "browserify": "^14.4.0",
-    "browserify-shim": "^3.8.14",
-    "chokidar-cli": "^1.2.0",
-    "colors": "^1.1.2",
-    "concat": "^1.0.3",
-    "concurrently": "^3.5.0",
-    "copyfiles": "^1.2.0",
-    "cross-var": "^1.0.3",
-    "cssnano": "^3.10.0",
-    "eslint": "^4.5.0",
-    "eslint-plugin-flowtype": "^2.35.1",
-    "eslintify": "^3.1.0",
-    "factor-bundle": "^2.5.0",
-    "filesize-cli": "^0.0.3",
-    "flow-bin": "^0.55.0",
-    "flow-watch": "^1.1.1",
-    "foundation-sites": "^6.4.3",
-    "htmlmin": "^0.0.7",
-    "imagemin-cli": "^3.0.0",
-    "jquery": "^3.2.1",
-    "lity": "^2.2.0",
-    "modernizr": "^3.5.0",
-    "motion-ui": "^1.1.1",
-    "node-sass": "^4.5.3",
-    "owl.carousel": "^2.2.0",
-    "postcss": "^6.0.10",
-    "postcss-cli": "^4.1.0",
-    "postcss-pxtorem": "^4.0.1",
-    "prettyjson": "^1.2.1",
-    "rimraf": "^2.6.1",
-    "sass-lint": "^1.11.1",
-    "semver": "^5.4.1",
-    "svg-sprite": "^1.3.7",
-    "tachyons": "^4.8.1",
-    "uglify-js": "^3.0.28",
-    "uglifyify": "^4.0.3",
-    "unflowify": "^1.0.1",
-    "watchify": "^3.9.0"
-  },
-  "babel": {
-    "presets": [
-      "flow",
-      [
-        "env",
-        {
-          "targets": {
-            "browsers": [
-              "last 3 versions",
-              "ie >= 10"
+    "name": "experiments",
+    "version": "1.0.0",
+    "description": "he",
+    "main": "test.js",
+    "sasslintConfig": "config/.sass-lint.yml",
+    "engines": {
+        "node": ">=8.5.0"
+    },
+    "dependencies": {
+        "a11y": "^0.5.0",
+        "autoprefixer": "^7.1.3",
+        "babel-eslint": "^8.0.0",
+        "babel-minify": "^0.2.0",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.6.0",
+        "babel-preset-flow": "^6.23.0",
+        "babelify": "^7.3.0",
+        "browser-sync": "^2.18.13",
+        "browserify": "^14.4.0",
+        "browserify-shim": "^3.8.14",
+        "chokidar-cli": "^1.2.0",
+        "colors": "^1.1.2",
+        "concat": "^1.0.3",
+        "concurrently": "^3.5.0",
+        "copyfiles": "^1.2.0",
+        "cross-var": "^1.0.3",
+        "cssnano": "^3.10.0",
+        "eslint": "^4.5.0",
+        "eslint-plugin-flowtype": "^2.35.1",
+        "eslintify": "^3.1.0",
+        "factor-bundle": "^2.5.0",
+        "filesize-cli": "^0.0.3",
+        "flow-bin": "^0.55.0",
+        "flow-watch": "^1.1.1",
+        "foundation-sites": "^6.4.3",
+        "htmlmin": "^0.0.7",
+        "imagemin-cli": "^3.0.0",
+        "jquery": "^3.2.1",
+        "lity": "^2.2.0",
+        "modernizr": "^3.5.0",
+        "motion-ui": "^1.1.1",
+        "node-sass": "^4.5.3",
+        "owl.carousel": "^2.2.0",
+        "postcss": "^6.0.10",
+        "postcss-cli": "^4.1.0",
+        "postcss-pxtorem": "^4.0.1",
+        "prettyjson": "^1.2.1",
+        "rimraf": "^2.6.1",
+        "sass-lint": "^1.11.1",
+        "semver": "^5.4.1",
+        "svg-sprite": "^1.3.7",
+        "tachyons": "^4.8.1",
+        "uglify-js": "^3.0.28",
+        "uglifyify": "^4.0.3",
+        "unflowify": "^1.0.1",
+        "watchify": "^3.9.0"
+    },
+    "babel": {
+        "presets": [
+            "flow",
+            [
+                "env",
+                {
+                    "targets": {
+                        "browsers": [
+                            "last 3 versions",
+                            "ie >= 10"
+                        ]
+                    }
+                }
             ]
-          }
+        ]
+    },
+    "postcss": {
+        "autoprefixer": {
+            "browsers": [
+                "last 3 versions",
+                "ie >= 10"
+            ]
+        },
+        "cssnano": {
+            "autoprefixer": "false"
+        },
+        "postcss-pxtorem": {
+            "rootValue": "16",
+            "replace": "false",
+            "propWhiteList": [],
+            "selectorBlack:ist": [
+                ":before",
+                ":after",
+                "::before",
+                "::after"
+            ]
         }
-      ]
-    ]
-  },
-  "postcss": {
-    "autoprefixer": {
-      "browsers": [
-        "last 3 versions",
-        "ie >= 10"
-      ]
     },
-    "cssnano": {
-      "autoprefixer": "false"
+    "eslintConfig": {
+        "rules": {
+            "indent": [
+                1,
+                4
+            ],
+            "comma-style": [
+                2,
+                "last"
+            ],
+            "no-undef": 0,
+            "func-names": 0,
+            "no-labels": 2,
+            "keyword-spacing": [
+                2,
+                {
+                    "before": true,
+                    "after": true
+                }
+            ],
+            "no-empty-label": 0,
+            "no-console": 0,
+            "semi": 1,
+            "flowtype/boolean-style": [
+                2,
+                "boolean"
+            ],
+            "flowtype/define-flow-type": 1,
+            "flowtype/delimiter-dangle": [
+                2,
+                "never"
+            ],
+            "flowtype/generic-spacing": [
+                2,
+                "never"
+            ],
+            "flowtype/no-primitive-constructor-types": 2,
+            "flowtype/no-types-missing-file-annotation": 2,
+            "flowtype/no-weak-types": 2,
+            "flowtype/object-type-delimiter": [
+                2,
+                "comma"
+            ],
+            "flowtype/require-parameter-type": 2,
+            "flowtype/require-return-type": [
+                2,
+                "always",
+                {
+                    "annotateUndefined": "never"
+                }
+            ],
+            "flowtype/require-valid-file-annotation": 2,
+            "flowtype/semi": [
+                2,
+                "always"
+            ],
+            "flowtype/space-after-type-colon": [
+                2,
+                "always"
+            ],
+            "flowtype/space-before-generic-bracket": [
+                2,
+                "never"
+            ],
+            "flowtype/space-before-type-colon": [
+                2,
+                "never"
+            ],
+            "flowtype/type-id-match": [
+                2,
+                "^([A-Z][a-z0-9]+)+Type$"
+            ],
+            "flowtype/union-intersection-spacing": [
+                2,
+                "always"
+            ],
+            "flowtype/use-flow-type": 1,
+            "flowtype/valid-syntax": 1
+        },
+        "globals": {
+            "mixpanel": true,
+            "require": true,
+            "jQuery": true,
+            "Foundation": true,
+            "$": true
+        },
+        "env": {
+            "es6": true,
+            "browser": true,
+            "node": true
+        },
+        "parserOptions": {
+            "ecmaVersion": 6,
+            "sourceType": "module",
+            "ecmaFeatures": {
+                "modules": true
+            }
+        },
+        "plugins": [
+            "flowtype"
+        ],
+        "settings": {
+            "flowtype": {
+                "onlyFilesWithFlowAnnotation": true
+            }
+        },
+        "extends": "eslint:recommended",
+        "parser": "babel-eslint"
     },
-    "postcss-pxtorem": {
-      "rootValue": "16",
-      "replace": "false",
-      "propWhiteList": [],
-      "selectorBlack:ist": [
-        ":before",
-        ":after",
-        "::before",
-        "::after"
-      ]
+    "config": {
+        "assets": "app/assets",
+        "watchifytransform": " -t [ eslintify --quiet-ignored true ] -t [ babelify ] ",
+        "browserifytransform": " -t [ eslintify --quiet-ignored true ] -t [ babelify ] -g uglifyify ",
+        "concurrently": " --raw --kill-others-on-fail "
+    },
+    "concat": {
+        "dist": "app/assets/js/concat.dist.js",
+        "files": [
+            "node_modules/jquery/dist/jquery.min.js",
+            "node_modules/foundation-sites/dist/js/foundation.min.js"
+        ]
+    },
+    "scripts": {
+        "a11y": "a11y http://localhost > config/accessibility-report.txt",
+        "checkversion": "node config/check-version",
+        "size": "filesize-cli dist/assets/",
+        "svgsprite": "svg-sprite --config config/svgsprite.json $npm_package_config_assets/images/sprite/*.svg",
+        "clean": "rimraf dist && rimraf app/**/*.css && rimraf $npm_package_config_assets/images/sprite/symbol && npm run svgsprite",
+        "css": "node-sass $npm_package_config_assets/scss/*.scss --include-path node_modules -o $npm_package_config_assets/css",
+        "js:concat": "node config/concat",
+        "js:browserify": "browserify $npm_package_config_assets/js/app.js $npm_package_config_browserifytransform -o $npm_package_config_assets/js/app.dist.js",
+        "js:watchify": "watchify --verbose --debug $npm_package_config_assets/js/app.js $npm_package_config_watchifytransform -o $npm_package_config_assets/js/app.dist.js",
+        "images": "imagemin $npm_package_config_assets/images/* --out-dir=dist/assets/images",
+        "copy": "copyfiles -u 1 app/**/*.{css,html,js,otf,ttf,woff2,jpg} dist/",
+        "browsersync": "browser-sync start --config=config/browsersync.js",
+        "prebuild": "npm run clean && npm run sass-lint",
+        "prewatch": "npm run clean && npm run css",
+        "flow:watch": "flow-watch",
+        "watch:scss": "export SHELL=bash && chokidar \"$npm_package_config_assets/scss/**/*.scss\" -c \"npm run sass-lint && npm run css -- --source-map-embed true\"",
+        "sass-lint": "sass-lint -c config/.sass-lint.yml \"$npm_package_config_assets/scss/**/*.scss\" -v -q",
+        "build": "concurrently $npm_package_config_concurrently \"npm run css -- --output-style compressed\" \"npm run js:browserify\"",
+        "postbuild": "npm run copy && npm run size",
+        "postcss": "postcss $npm_package_config_assets/css/*.css -c config/postcss.config.js --dir $npm_package_config_assets/css",
+        "watch": "npm run build && concurrently $npm_package_config_concurrently \"npm run browsersync\" \"npm run watch:scss\" \"npm run js:watchify\"",
+        "local": "npm run build && concurrently $npm_package_config_concurrently \"npm run watch:scss\" \"npm run js:watchify\" \"npm run browsersync\""
+    },
+    "author": "",
+    "license": "ISC",
+    "optionalDependencies": {
+        "fsevents": "^1.1.2"
     }
-  },
-  "eslintConfig": {
-    "rules": {
-      "indent": [
-        1,
-        4
-      ],
-      "comma-style": [
-        2,
-        "last"
-      ],
-      "no-undef": 0,
-      "func-names": 0,
-      "no-labels": 2,
-      "keyword-spacing": [
-        2,
-        {
-          "before": true,
-          "after": true
-        }
-      ],
-      "no-empty-label": 0,
-      "no-console": 0,
-      "semi": 1,
-      "flowtype/boolean-style": [
-        2,
-        "boolean"
-      ],
-      "flowtype/define-flow-type": 1,
-      "flowtype/delimiter-dangle": [
-        2,
-        "never"
-      ],
-      "flowtype/generic-spacing": [
-        2,
-        "never"
-      ],
-      "flowtype/no-primitive-constructor-types": 2,
-      "flowtype/no-types-missing-file-annotation": 2,
-      "flowtype/no-weak-types": 2,
-      "flowtype/object-type-delimiter": [
-        2,
-        "comma"
-      ],
-      "flowtype/require-parameter-type": 2,
-      "flowtype/require-return-type": [
-        2,
-        "always",
-        {
-          "annotateUndefined": "never"
-        }
-      ],
-      "flowtype/require-valid-file-annotation": 2,
-      "flowtype/semi": [
-        2,
-        "always"
-      ],
-      "flowtype/space-after-type-colon": [
-        2,
-        "always"
-      ],
-      "flowtype/space-before-generic-bracket": [
-        2,
-        "never"
-      ],
-      "flowtype/space-before-type-colon": [
-        2,
-        "never"
-      ],
-      "flowtype/type-id-match": [
-        2,
-        "^([A-Z][a-z0-9]+)+Type$"
-      ],
-      "flowtype/union-intersection-spacing": [
-        2,
-        "always"
-      ],
-      "flowtype/use-flow-type": 1,
-      "flowtype/valid-syntax": 1
-    },
-    "globals": {
-      "mixpanel": true,
-      "require": true,
-      "jQuery": true,
-      "Foundation": true,
-      "$": true
-    },
-    "env": {
-      "es6": true,
-      "browser": true,
-      "node": true
-    },
-    "parserOptions": {
-      "ecmaVersion": 6,
-      "sourceType": "module",
-      "ecmaFeatures": {
-        "modules": true
-      }
-    },
-    "plugins": [
-      "flowtype"
-    ],
-    "settings": {
-      "flowtype": {
-        "onlyFilesWithFlowAnnotation": true
-      }
-    },
-    "extends": "eslint:recommended",
-    "parser": "babel-eslint"
-  },
-  "config": {
-    "assets": "app/assets",
-    "watchifytransform": " -t [ eslintify --quiet-ignored true ] -t [ babelify ] ",
-    "browserifytransform": " -t [ eslintify --quiet-ignored true ] -t [ babelify ] -g uglifyify ",
-    "concurrently": " --raw --kill-others-on-fail "
-  },
-  "concat": {
-    "dist": "app/assets/js/concat.dist.js",
-    "files": [
-      "node_modules/jquery/dist/jquery.min.js",
-      "node_modules/foundation-sites/dist/js/foundation.min.js"
-    ]
-  },
-  "scripts": {
-    "a11y": "a11y http://localhost > config/accessibility-report.txt",
-    "checkversion": "node config/check-version",
-    "size": "filesize-cli dist/assets/",
-    "svgsprite": "svg-sprite --config config/svgsprite.json $npm_package_config_assets/images/sprite/*.svg",
-    "clean": "rimraf dist && rimraf app/**/*.css && rimraf $npm_package_config_assets/images/sprite/symbol && npm run svgsprite",
-    "css": "node-sass $npm_package_config_assets/scss/*.scss --include-path node_modules -o $npm_package_config_assets/css",
-    "js:concat": "node config/concat",
-    "js:browserify": "browserify $npm_package_config_assets/js/app.js $npm_package_config_browserifytransform -o $npm_package_config_assets/js/app.dist.js",
-    "js:watchify": "watchify --verbose --debug $npm_package_config_assets/js/app.js $npm_package_config_watchifytransform -o $npm_package_config_assets/js/app.dist.js",
-    "images": "imagemin $npm_package_config_assets/images/* --out-dir=dist/assets/images",
-    "copy": "copyfiles -u 1 app/**/*.{css,html,js,otf,ttf,woff2,jpg} dist/",
-    "browsersync": "browser-sync start --config=config/browsersync.js",
-    "prebuild": "npm run clean && npm run sass-lint",
-    "prewatch": "npm run clean && npm run css",
-    "flow:watch": "flow-watch",
-    "watch:scss": "export SHELL=bash && chokidar \"$npm_package_config_assets/scss/**/*.scss\" -c \"npm run sass-lint && npm run css -- --source-map-embed true\"",
-    "sass-lint": "sass-lint -c config/.sass-lint.yml \"$npm_package_config_assets/scss/**/*.scss\" -v -q",
-    "build": "concurrently $npm_package_config_concurrently \"npm run css -- --output-style compressed\" \"npm run js:browserify\"",
-    "postbuild": "npm run copy && npm run size",
-    "postcss": "postcss $npm_package_config_assets/css/*.css -c config/postcss.config.js --dir $npm_package_config_assets/css",
-    "watch": "npm run build && concurrently $npm_package_config_concurrently \"npm run browsersync\" \"npm run watch:scss\" \"npm run js:watchify\"",
-    "local": "npm run build && concurrently $npm_package_config_concurrently \"npm run watch:scss\" \"npm run js:watchify\" \"npm run browsersync\""
-  },
-  "author": "",
-  "license": "ISC",
-  "optionalDependencies": {
-    "fsevents": "^1.1.2"
-  }
 }
