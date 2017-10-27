@@ -6,8 +6,10 @@ services:
             - '3000:3000'
             - '3001:3001'
             - '80:80'
+        command: 'npm run watch'
         volumes:
             - "./app:/app/app"
+            - "./dist:/app/dist"
             - "./config:/app/config"
             - "./package.json:/app/package.json"
             - "./yarn.lock:/app/yarn.lock"

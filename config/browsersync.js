@@ -1,5 +1,5 @@
 module.exports = {
     "port": 80,
-    "server": 'app',
-    "files": ['**/*.html','**/*.css', '**/*.min.js','**/*.dist.js']
+    "server": 'dist',
+    "files": ['dist/**/*.html','dist/**/*.css', 'dist/**/*.min.js','dist/**/*.dist.js']
 };

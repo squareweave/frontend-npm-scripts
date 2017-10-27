@@ -1,5 +1,5 @@
 {
-    "dest": "app/assets/images/sprite",
+    "dest": "dist/assets/images/sprite",
     "log": "info",
     "svg": {
       "rootAttributes": {

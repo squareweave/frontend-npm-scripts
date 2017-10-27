@@ -14,4 +14,4 @@ RUN npm install --global yarn && \
 
 COPY . /app
 
-CMD npm run watch
+CMD npm run build
