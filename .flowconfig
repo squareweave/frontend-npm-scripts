@@ -1,6 +1,7 @@
 [ignore]
 .*/node_modules/.*
 .*\.min\.js
+.*/dist/.*
 
 [include]
 app/assets/js
