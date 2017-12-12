@@ -16,10 +16,14 @@ files:
     - 'sass/vendor/**/*.*'
     - 'node_modules/**/*.*'
 # Rule Configuration
+# https://github.com/sasstools/sass-lint/blob/develop/lib/config/sass-lint.yml
 rules:
+  # Extends
   extends-before-mixins: 2
   extends-before-declarations: 2
-  placeholder-in-extend: 2
+  placeholder-in-extend: 1
+
+  # Mixins
   mixins-before-declarations:
     - 2
     -
@@ -27,10 +31,108 @@ rules:
         - breakpoint
         - mq
 
-  no-warn: 1
-  no-debug: 1
+  # Line Spacing
+  one-declaration-per-line: 2
+  empty-line-between-blocks: 0
+  single-line-per-selector: 2
+
+  # Disallows
+  no-attribute-selectors: 0
+  no-color-hex: 0
+  no-color-keywords: 0
+  no-color-literals: 0
+  no-combinators: 0
+  no-css-comments: 0
+  no-disallowed-properties: 0
+  no-duplicate-properties:
+    - 2
+    -
+      exclude:
+        - display
+  no-empty-rulesets: 2
+  no-extends: 0
   no-ids: 2
   no-important: 2
+  no-invalid-hex: 1
+  no-mergeable-selectors: 0
+  no-misspelled-properties: 2
+  no-qualifying-elements:
+    - 2
+    -
+      allow-element-with-attribute: true
+      allow-element-with-id: false
+      allow-element-with-class: false
+  no-trailing-whitespace: 0
+  no-trailing-zero: 2
+  no-transition-all: 0
+  no-universal-selectors: 0
+  no-url-domains: 1
+  no-url-protocols: 1
+  no-warn: 0
+  property-units:
+    - 2
+    -
+      global: ['em', 'px', 'rem']
+
+  # No Vendor Prefixes
+  no-vendor-prefixes: 2
+
+  # Nesting
+  declarations-before-nesting: 2
+  force-attribute-nesting: 2
+  force-element-nesting: 2
+  force-pseudo-nesting: 2
+
+  # Name Formats
+  class-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      convention: 'hyphenatedbem'
+  function-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      ceonvention: 'hyphenatedlowercase'
+  id-name-format: 0
+  mixin-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      ceonvention: 'hyphenatedlowercase'
+  placeholder-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      ceonvention: 'hyphenatedlowercase'
+  variable-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      ceonvention: 'hyphenatedlowercase'
+
+  # Style Guide
+  attribute-quotes:
+    - 2
+    -
+      include: true
+  bem-depth: 0
+  border-zero:
+    - 2
+    -
+      convention: '0'
+  brace-style:
+    - 2
+    -
+      style: '1tbs'
+      allow-single-line: false
+  clean-import-paths: 0
+  # todo: contentious
+  empty-args: 0
+  hex-length:
+   - 2
+   -
+     style: 'long'
   hex-notation:
     - 2
     -
@@ -39,15 +141,58 @@ rules:
     - 2
     -
       size: 4
+  leading-zero:
+    - 2
+    -
+      include: true
+  max-line-length: 0
+  # todo: contentious
+  max-file-line-count:
+    - 2
+    -
+      length: 400
+  nesting-depth:
+    - 2
+    -
+      max-depth: 2
+  # https://github.com/sasstools/sass-lint/blob/develop/lib/config/property-sort-orders/recess.yml
+  # todo: contentious
   property-sort-order:
     - 1
     -
-      order:
-        - display
-        - margin
+      order: 'recess'
       ignore-custom-properties: true
-  variable-for-property:
+  pseudo-element: 0
+  quotes: 0
+  shorthand-values:
     - 2
     -
+      allowed-shorthands:
+        - 1
+        - 2
+  url-quotes: 2
+  variable-for-property:
+    - 1
+    -
+      allow-map-get: true
       properties:
         - content
+  zero-unit: 0
+
+  # Inner Spacing
+  space-after-comma: 1
+  space-before-colon: 0
+  space-after-colon: 2
+  space-before-brace: 0
+  space-before-bang: 0
+  space-after-bang: 0
+  space-between-parens: 0
+  space-around-operator: 0
+
+  # Final Items
+  trailing-semicolon: 1
+  final-newline: 0
+
+
+
+
