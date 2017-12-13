@@ -18,6 +18,7 @@ files:
 # Rule Configuration
 # https://github.com/sasstools/sass-lint/blob/develop/lib/config/sass-lint.yml
 rules:
+
   # Extends
   extends-before-mixins: 2
   extends-before-declarations: 2
