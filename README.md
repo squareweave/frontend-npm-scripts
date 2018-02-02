@@ -44,7 +44,7 @@ npm scripts inside package.json, great flexibility is allowed. The following is 
 
 You have two options for adding a dependancy. For all frontend generation and testing, use:
 
-`yarn add xxpackagenamexx --save-dev`
+`yarn add xxpackagenamexx --dev`
 
 For all frontend packages actually used in the frontend, use:
 
