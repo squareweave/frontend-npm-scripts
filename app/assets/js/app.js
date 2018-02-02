@@ -1,6 +1,7 @@
 // import "babel-polyfill";
 import jQuery from "jquery";
 import Foundation from "foundation-sites";
+import PreactApp from "./PreactApp";
 
 (function ($) {
     console.log(`jQuery version: ${$.fn.jquery}`);
@@ -11,4 +12,7 @@ import Foundation from "foundation-sites";
         div.innerHTML = new XMLSerializer().serializeToString(data.documentElement);
         document.body.insertBefore(div, document.body.childNodes[0]);
     });
+
+    new PreactApp($('.js-app-example'));
+
 })(jQuery);

@@ -61,6 +61,11 @@ If you wish to have a persistant flow watcher as you work, open a new terminal a
 
 `docker-compose run --rm web npm run flow:watch`
 
+### Preact inbuilt
+
+Preact (instead of react) is included and imported as `react` via `preact-compat`. This should
+allow you to create react modules and use react packages easily.
+
 ---
 
 ### Why browserify?

@@ -5,7 +5,7 @@
     "main": "placeholder",
     "sasslintConfig": "config/.sass-lint.yml",
     "engines": {
-        "node": ">=8.6.0"
+        "node": ">=8.9.0"
     },
     "repository": {
         "type": "git",
@@ -13,16 +13,19 @@
     },
     "devDependencies": {
         "a11y": "^0.5.0",
-        "autoprefixer": "^7.1.6",
+        "autoprefixer": "^7.2.5",
         "babel-core": "^6.26.0",
-        "babel-eslint": "^8.0.2",
-        "babel-minify": "^0.2.0",
+        "babel-eslint": "^8.2.1",
+        "babel-minify": "^0.3.0",
+        "babel-plugin-module-resolver": "^3.0.0",
+        "babel-plugin-transform-react-jsx": "^6.24.1",
         "babel-polyfill": "^6.26.0",
         "babel-preset-env": "^1.6.1",
         "babel-preset-flow": "^6.23.0",
+        "babel-preset-react": "^6.24.1",
         "babelify": "^8.0.0",
-        "browser-sync": "^2.18.13",
-        "browserify": "^14.5.0",
+        "browser-sync": "^2.23.6",
+        "browserify": "^15.2.0",
         "browserify-shim": "^3.8.14",
         "chokidar-cli": "^1.2.0",
         "colors": "^1.1.2",
@@ -30,50 +33,68 @@
         "copyfiles": "^1.2.0",
         "cross-var": "^1.1.0",
         "cssnano": "^3.10.0",
-        "eslint": "^4.10.0",
-        "eslint-plugin-flowtype": "^2.39.1",
+        "eslint": "^4.16.0",
+        "eslint-plugin-flowtype": "^2.42.0",
         "eslintify": "^3.1.0",
         "factor-bundle": "^2.5.0",
         "filesize-cli": "^0.0.3",
-        "flow-bin": "^0.61.0",
+        "flow-bin": "^0.64.0",
         "flow-watch": "^1.1.1",
         "imagemin-cli": "^3.0.0",
         "mkdirp": "^0.5.1",
-        "node-sass": "^4.6.0",
+        "node-sass": "^4.7.2",
         "npm-run-all": "^4.1.2",
         "nsp": "^3.1.0",
-        "postcss": "^6.0.14",
+        "postcss": "^6.0.16",
         "postcss-cli": "^4.1.1",
         "postcss-pxtorem": "^4.0.1",
+        "preact": "^8.2.7",
+        "preact-compat": "^3.18.0",
         "rimraf": "^2.6.2",
         "sass-lint": "^1.12.1",
-        "semver": "^5.4.1",
+        "semver": "^5.5.0",
+        "smart-outline": "^0.0.5",
         "svg-sprite": "^1.3.7",
-        "uglifyify": "^4.0.4",
+        "uglifyify": "^4.0.5",
         "unflowify": "^1.0.1",
-        "watchify": "^3.9.0"
+        "watchify": "^3.10.0"
     },
     "dependencies": {
         "foundation-sites": "^6.4.4-rc1",
-        "http-server": "^0.10.0",
-        "jquery": "^3.2.1",
+        "http-server": "^0.11.1",
+        "jquery": "^3.3.1",
+        "lodash": "^4.17.4",
         "modernizr": "^3.5.0",
-        "moment": "^2.19.1",
+        "moment": "^2.20.1",
         "motion-ui": "^1.2.3",
         "owl.carousel": "^2.2.0",
-        "tachyons": "^4.9.0"
+        "tachyons": "^4.9.1"
     },
     "babel": {
         "presets": [
             "flow",
+            "react",
             [
                 "env",
                 {
                     "targets": {
                         "browsers": [
-                            "last 3 versions",
-                            "ie >= 10"
+                            "last 3 versions"
                         ]
+                    }
+                }
+            ]
+        ],
+        "plugins": [
+            [
+                "module-resolver",
+                {
+                    "root": [
+                        "."
+                    ],
+                    "alias": {
+                        "react": "preact-compat",
+                        "react-dom": "preact-compat"
                     }
                 }
             ]
@@ -111,6 +132,7 @@
                 2,
                 "last"
             ],
+            "no-unused-vars": 0,
             "no-undef": 0,
             "func-names": 0,
             "no-labels": 2,
