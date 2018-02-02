@@ -183,7 +183,7 @@ rules:
   # Inner Spacing
   space-after-comma: 1
   space-before-colon: 0
-  space-after-colon: 2
+  space-after-colon: 1
   space-before-brace: 0
   space-before-bang: 0
   space-after-bang: 0
