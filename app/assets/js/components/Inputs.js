@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import "preact/devtools";
 import { render } from 'react-dom';
-
+import "preact/devtools";
+import CircularLoading from 'respinner/lib/circular';
 import Button from "./Button";
 
 export default class Inputs extends Component {
@@ -28,6 +28,8 @@ export default class Inputs extends Component {
         return <div>
             <input type={'text'} value={this.state.inputValue} onChange={e => this.updateInputValue(e)} />
             {this.state.inputValue.length > 0 ? <Button onClick={e => this.clickIt()}>{this.state.inputValue}</Button> : null}
+            Here's a fun loading thingy. It's loaded as a react component and works because preact-compat is aliased to react.
+            <CircularLoading  />
         </div>;
     }
 }

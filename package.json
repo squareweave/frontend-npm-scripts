@@ -13,7 +13,8 @@
     },
     "devDependencies": {
         "a11y": "^0.5.0",
-        "autoprefixer": "^7.2.5",
+        "aliasify": "^2.1.0",
+        "autoprefixer": "^8.0.0",
         "babel-core": "^6.26.0",
         "babel-eslint": "^8.2.1",
         "babel-minify": "^0.3.0",
@@ -25,7 +26,7 @@
         "babel-preset-react": "^6.24.1",
         "babelify": "^8.0.0",
         "browser-sync": "^2.23.6",
-        "browserify": "^15.2.0",
+        "browserify": "^16.1.0",
         "browserify-shim": "^3.8.14",
         "chokidar-cli": "^1.2.0",
         "colors": "^1.1.2",
@@ -38,7 +39,7 @@
         "eslintify": "^3.1.0",
         "factor-bundle": "^2.5.0",
         "filesize-cli": "^0.0.3",
-        "flow-bin": "^0.64.0",
+        "flow-bin": "^0.66.0",
         "flow-watch": "^1.1.1",
         "imagemin-cli": "^3.0.0",
         "mkdirp": "^0.5.1",
@@ -46,7 +47,7 @@
         "npm-run-all": "^4.1.2",
         "nsp": "^3.1.0",
         "postcss": "^6.0.16",
-        "postcss-cli": "^4.1.1",
+        "postcss-cli": "^5.0.0",
         "postcss-pxtorem": "^4.0.1",
         "preact": "^8.2.7",
         "preact-compat": "^3.18.0",
@@ -55,7 +56,7 @@
         "semver": "^5.5.0",
         "smart-outline": "^0.0.5",
         "svg-sprite": "^1.3.7",
-        "uglifyify": "^4.0.5",
+        "uglify-js": "^3.3.12",
         "unflowify": "^1.0.1",
         "watchify": "^3.10.0"
     },
@@ -68,6 +69,7 @@
         "moment": "^2.20.1",
         "motion-ui": "^1.2.3",
         "owl.carousel": "^2.2.0",
+        "respinner": "^2.2.1",
         "tachyons": "^4.9.1"
     },
     "babel": {
@@ -93,8 +95,8 @@
                         "."
                     ],
                     "alias": {
-                        "react": "preact-compat",
-                        "react-dom": "preact-compat"
+                        "react": "preact-compat/dist/preact-compat.js",
+                        "react-dom": "preact-compat/dist/preact-compat.js"
                     }
                 }
             ]
@@ -203,7 +205,6 @@
             "flowtype/valid-syntax": 1
         },
         "globals": {
-            "mixpanel": true,
             "require": true,
             "jQuery": true,
             "Foundation": true,
@@ -235,9 +236,16 @@
     "config": {
         "assets": "app/assets",
         "dist": "dist/assets",
-        "watchifytransform": " -t [ eslintify --quiet-ignored true ] -t [ babelify ] ",
-        "browserifytransform": " -t [ eslintify --quiet-ignored true ] -t [ babelify ] -g uglifyify ",
+        "browserifytransform": " -g aliasify -t [ eslintify --quiet-ignored true ] -t [ babelify ] ",
         "concurrently": " --raw --kill-others-on-fail "
+    },
+    "aliasify": {
+        "aliases": {
+            "accessibleMegaMenu": "./vrgf/design/js/vendor/jquery.accessibleMegamenu.js",
+            "react": "preact-compat/dist/preact-compat.js",
+            "react-dom": "preact-compat/dist/preact-compat.js",
+            "create-react-class": "preact-compat/lib/create-react-class"
+        }
     },
     "concat": {
         "dist": "app/assets/js/concat.dist.js",
@@ -253,8 +261,8 @@
         "svgsprite": "svg-sprite --config config/svgsprite.json $npm_package_config_assets/images/sprite/*.svg",
         "css": "node-sass $npm_package_config_assets/scss/*.scss --include-path node_modules -o $npm_package_config_dist/css",
         "js:concat": "node config/concat",
-        "js:browserify": "browserify $npm_package_config_assets/js/app.js $npm_package_config_browserifytransform -o $npm_package_config_dist/js/app.dist.js",
-        "js:watchify": "watchify --verbose --debug $npm_package_config_assets/js/app.js $npm_package_config_watchifytransform -o $npm_package_config_dist/js/app.dist.js",
+        "js:browserify": "browserify $npm_package_config_assets/js/app.js $npm_package_config_browserifytransform | uglifyjs -m > $npm_package_config_dist/js/app.dist.js",
+        "js:watchify": "watchify --verbose --debug $npm_package_config_assets/js/app.js $npm_package_config_browserifytransform -o $npm_package_config_dist/js/app.dist.js",
         "images": "imagemin $npm_package_config_assets/images/* --out-dir=dist/assets/images",
         "copy": "copyfiles -u 1 app/**/*.{css,html,otf,ttf,woff2,jpg} dist/",
         "copy:html": "copyfiles -u 1 app/**/*.html dist/",

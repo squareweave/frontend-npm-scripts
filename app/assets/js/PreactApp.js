@@ -1,6 +1,6 @@
 import React from 'react';
-import "preact/devtools";
 import { render } from 'react-dom';
+import "preact/devtools";
 
 import Inputs from "./components/Inputs";
 
