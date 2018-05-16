@@ -1,0 +1,14 @@
+@font-face {
+	font-family: "{{fontName}}";
+	src: {{{src}}};
+}
+
+.icon[class*=" {{classPrefix}}"]:before, .icon[class^={{classPrefix}}]:before, .stream-menu .icon[class*=" {{classPrefix}}"]:before, .stream-menu .icon[class^={{classPrefix}}]:before{
+	font-family: {{fontName}};
+}
+
+{{#each codepoints}}
+.{{../classPrefix}}{{@key}}:before {
+	content: "\\{{this}}";
+}
+{{/each}}

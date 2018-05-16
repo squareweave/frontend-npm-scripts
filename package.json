@@ -43,6 +43,7 @@
         "flow-watch": "^1.1.3",
         "imagemin-cli": "^3.0.0",
         "lodash": "^4.17.10",
+        "minimist": "^1.2.0",
         "mkdirp": "^0.5.1",
         "modernizr": "^3.6.0",
         "node-sass": "^4.9.0",
@@ -60,7 +61,8 @@
         "svg-sprite": "^1.4.0",
         "uglify-js": "^3.3.25",
         "unflowify": "^1.0.1",
-        "watchify": "^3.11.0"
+        "watchify": "^3.11.0",
+        "webfonts-generator": "^0.4.0"
     },
     "dependencies": {
         "foundation-sites": "^6.4.4-rc1",
@@ -104,8 +106,8 @@
         ]
     },
     "browserslist": [
-      "last 2 versions",
-      "ie >= 11"
+        "last 2 versions",
+        "ie >= 11"
     ],
     "eslintConfig": {
         "rules": {
@@ -238,6 +240,7 @@
         ]
     },
     "scripts": {
+        "iconfont": "node $config/iconfont -i=$npm_package_config_assets/images/sprite/*.svg -d=$npm_package_config_dist/images/sprite",
         "a11y": "a11y http://localhost > config/accessibility-report.txt",
         "checkversion": "node config/check-version",
         "size": "filesize-cli dist/assets/",
