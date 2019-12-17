@@ -12,8 +12,7 @@ services:
             - "./dist:/app/dist"
             - "./config:/app/config"
             - "./package.json:/app/package.json"
-            - "./yarn.lock:/app/yarn.lock"
+            - "./package-lock.json:/app/package-lock.json"
             - "./.editorconfig:/app/.editorconfig"
-            - "./.flowconfig:/app/.flowconfig"
         build:
             context: .

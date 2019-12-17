@@ -1,271 +1,118 @@
 {
     "name": "frontend-npm-scripts",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "description": "Use to start your frontend project. Contains project ready editorconfig, eslint, package.json npm scripts.",
     "main": "placeholder",
-    "sasslintConfig": "config/.sass-lint.yml",
+    "prettier": "prettier-config-ackama",
     "engines": {
-        "node": ">=9.11.0"
+        "node": ">=13.1.0"
     },
     "repository": {
         "type": "git",
         "url": "git@github.com:squareweave/frontend-npm-scripts.git"
     },
     "devDependencies": {
+        "@babel/core": "^7.7.5",
+        "@babel/plugin-transform-react-jsx": "^7.7.4",
         "a11y": "^0.5.1",
-        "aliasify": "^2.1.0",
-        "autoprefixer": "^8.5.0",
-        "babel-core": "^6.26.3",
-        "babel-eslint": "^8.2.3",
-        "babel-minify": "^0.4.3",
-        "babel-plugin-module-resolver": "^3.1.1",
-        "babel-plugin-transform-react-jsx": "^6.24.1",
-        "babel-polyfill": "^6.26.0",
-        "babel-preset-env": "^1.7.0",
-        "babel-preset-flow": "^6.23.0",
-        "babel-preset-react": "^6.24.1",
-        "babelify": "^8.0.0",
-        "browser-sync": "^2.24.4",
-        "browserify": "^16.2.2",
-        "browserify-shim": "^3.8.14",
-        "chokidar-cli": "^1.2.0",
-        "colors": "^1.2.5",
+        "autoprefixer": "^9.7.3",
+        "babel-eslint": "^10.0.3",
+        "browser-sync": "^2.26.7",
+        "chokidar-cli": "^2.1.0",
+        "colors": "^1.4.0",
         "concat": "^1.0.3",
-        "copyfiles": "^2.0.0",
+        "copyfiles": "^2.1.1",
         "cross-var": "^1.1.0",
-        "cssnano": "^3.10.0",
-        "eslint": "^4.19.1",
-        "eslint-plugin-flowtype": "^2.46.3",
-        "eslintify": "^3.1.0",
-        "factor-bundle": "^2.5.0",
+        "cssnano": "^4.1.10",
+        "eslint": "^5.16.0",
+        "eslint-config-prettier": "^6.7.0",
+        "eslint-plugin-eslint-comments": "^3.1.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-prettier": "^3.1.2",
         "filesize-cli": "^0.0.3",
-        "flow-bin": "^0.72.0",
-        "flow-watch": "^1.1.3",
-        "imagemin-cli": "^3.0.0",
-        "lodash": "^4.17.10",
+        "imagemin-cli": "^5.1.0",
+        "lodash": "^4.17.15",
+        "metalsmith": "^2.3.0",
         "minimist": "^1.2.0",
         "mkdirp": "^0.5.1",
-        "modernizr": "^3.6.0",
-        "node-sass": "^4.9.0",
-        "npm-run-all": "^4.1.3",
-        "nsp": "^3.2.1",
-        "postcss": "^6.0.22",
-        "postcss-cli": "^5.0.0",
+        "modernizr": "^3.8.0",
+        "node-sass": "^4.13.0",
+        "npm-run-all": "^4.1.5",
+        "parcel-bundler": "^1.12.4",
+        "parcel-plugin-eslint": "^1.0.8-2",
+        "postcss": "^7.0.25",
+        "postcss-cli": "^6.1.3",
         "postcss-pxtorem": "^4.0.1",
-        "preact": "^8.2.9",
-        "preact-compat": "^3.18.0",
-        "rimraf": "^2.6.2",
-        "sass-lint": "^1.12.1",
-        "semver": "^5.5.0",
-        "smart-outline": "^0.0.5",
-        "svg-sprite": "^1.4.0",
-        "uglify-js": "^3.3.25",
-        "unflowify": "^1.0.1",
-        "watchify": "^3.11.0",
+        "preact": "^10.1.1",
+        "preact-compat": "^3.19.0",
+        "preact-render-to-string": "^5.1.2",
+        "prettier": "^1.19.1",
+        "prettier-config-ackama": "^0.1.2",
+        "rimraf": "^3.0.0",
+        "semver": "^7.1.0",
+        "stylelint": "^12.0.0",
+        "stylelint-config-recommended-scss": "^4.1.0",
+        "stylelint-scss": "^3.13.0",
+        "svg-sprite": "^1.5.0",
         "webfonts-generator": "^0.4.0"
     },
     "dependencies": {
-        "foundation-sites": "^6.4.4-rc1",
-        "http-server": "^0.11.1",
-        "jquery": "^3.3.1",
-        "moment": "^2.22.1",
-        "motion-ui": "^1.2.3",
+        "foundation-sites": "^6.6.1",
+        "gsap": "^3.0.4",
+        "http-server": "^0.12.0",
+        "jquery": "^3.4.1",
+        "moment": "^2.24.0",
+        "motion-ui": "^2.0.3",
         "owl.carousel": "^2.3.4",
-        "respinner": "^2.2.1",
-        "tachyons": "^4.9.1"
-    },
-    "babel": {
-        "presets": [
-            "flow",
-            "react",
-            [
-                "env",
-                {
-                    "targets": {
-                        "browsers": [
-                            "last 2 versions",
-                            "ie >= 11"
-                        ]
-                    }
-                }
-            ]
-        ],
-        "plugins": [
-            [
-                "module-resolver",
-                {
-                    "root": [
-                        "."
-                    ],
-                    "alias": {
-                        "react": "preact-compat/dist/preact-compat.js",
-                        "react-dom": "preact-compat/dist/preact-compat.js"
-                    }
-                }
-            ]
-        ]
+        "prop-types": "^15.7.2",
+        "respinner": "^3.0.2",
+        "smart-outline": "^0.0.5",
+        "tachyons": "^4.11.1"
     },
     "browserslist": [
-        "last 2 versions",
-        "ie >= 11"
+        "last 2 versions"
     ],
-    "eslintConfig": {
-        "rules": {
-            "indent": [
-                1,
-                4
-            ],
-            "comma-style": [
-                2,
-                "last"
-            ],
-            "no-unused-vars": 0,
-            "no-undef": 0,
-            "func-names": 0,
-            "no-labels": 2,
-            "keyword-spacing": [
-                2,
-                {
-                    "before": true,
-                    "after": true
-                }
-            ],
-            "no-empty-label": 0,
-            "no-console": 0,
-            "semi": 1,
-            "flowtype/boolean-style": [
-                2,
-                "boolean"
-            ],
-            "flowtype/define-flow-type": 1,
-            "flowtype/delimiter-dangle": [
-                2,
-                "never"
-            ],
-            "flowtype/generic-spacing": [
-                2,
-                "never"
-            ],
-            "flowtype/no-primitive-constructor-types": 2,
-            "flowtype/no-types-missing-file-annotation": 2,
-            "flowtype/no-weak-types": 2,
-            "flowtype/object-type-delimiter": [
-                2,
-                "comma"
-            ],
-            "flowtype/require-parameter-type": 2,
-            "flowtype/require-return-type": [
-                2,
-                "always",
-                {
-                    "annotateUndefined": "never"
-                }
-            ],
-            "flowtype/require-valid-file-annotation": 2,
-            "flowtype/semi": [
-                2,
-                "always"
-            ],
-            "flowtype/space-after-type-colon": [
-                2,
-                "always"
-            ],
-            "flowtype/space-before-generic-bracket": [
-                2,
-                "never"
-            ],
-            "flowtype/space-before-type-colon": [
-                2,
-                "never"
-            ],
-            "flowtype/type-id-match": [
-                2,
-                "^([A-Z][a-z0-9]+)+Type$"
-            ],
-            "flowtype/union-intersection-spacing": [
-                2,
-                "always"
-            ],
-            "flowtype/use-flow-type": 1,
-            "flowtype/valid-syntax": 1
-        },
-        "globals": {
-            "require": true,
-            "jQuery": true,
-            "Foundation": true,
-            "$": true
-        },
-        "env": {
-            "es6": true,
-            "browser": true,
-            "node": true
-        },
-        "parserOptions": {
-            "ecmaVersion": 6,
-            "sourceType": "module",
-            "ecmaFeatures": {
-                "modules": true
-            }
-        },
-        "plugins": [
-            "flowtype"
-        ],
-        "settings": {
-            "flowtype": {
-                "onlyFilesWithFlowAnnotation": true
-            }
-        },
-        "extends": "eslint:recommended",
-        "parser": "babel-eslint"
-    },
     "config": {
         "assets": "app/assets",
-        "dist": "dist/assets",
-        "browserifytransform": " -g aliasify -t [ eslintify --quiet-ignored true ] -t [ babelify ] ",
-        "concurrently": " --raw --kill-others-on-fail "
+        "dist": "dist/assets"
     },
-    "aliasify": {
-        "aliases": {
-            "accessibleMegaMenu": "./vrgf/design/js/vendor/jquery.accessibleMegamenu.js",
-            "react": "preact-compat/dist/preact-compat.js",
-            "react-dom": "preact-compat/dist/preact-compat.js",
-            "create-react-class": "preact-compat/lib/create-react-class"
-        }
+    "alias": {
+        "react": "preact/compat",
+        "react-dom/test-utils": "preact/test-utils",
+        "react-dom": "preact/compat"
     },
-    "concat": {
-        "dist": "app/assets/js/concat.dist.js",
-        "files": [
-            "node_modules/jquery/dist/jquery.min.js",
-            "node_modules/foundation-sites/dist/js/foundation.min.js"
+    "babel": {
+        "plugins": [
+            [
+                "@babel/plugin-transform-react-jsx",
+                {
+                    "pragma": "h",
+                    "pragmaFrag": "Fragment"
+                }
+            ]
         ]
     },
     "scripts": {
-        "iconfont": "node $config/iconfont -i=$npm_package_config_assets/images/sprite/*.svg -d=$npm_package_config_dist/images/sprite",
         "a11y": "a11y http://localhost > config/accessibility-report.txt",
         "checkversion": "node config/check-version",
         "size": "filesize-cli dist/assets/",
         "svgsprite": "svg-sprite --config config/svgsprite.json $npm_package_config_assets/images/sprite/*.svg",
         "css": "node-sass $npm_package_config_assets/scss/*.scss --include-path node_modules -o $npm_package_config_dist/css",
-        "js:concat": "node config/concat",
-        "js:browserify": "browserify $npm_package_config_assets/js/app.js $npm_package_config_browserifytransform | uglifyjs -m > $npm_package_config_dist/js/app.dist.js",
-        "js:watchify": "watchify --verbose --debug $npm_package_config_assets/js/app.js $npm_package_config_browserifytransform -o $npm_package_config_dist/js/app.dist.js",
+        "js:build": "NODE_ENV=production parcel build $npm_package_config_assets/js/app.js --out-dir $npm_package_config_dist/js --out-file app.dist.js --no-source-maps",
+        "js:watch": "NODE_ENV=development parcel watch $npm_package_config_assets/js/app.js --out-dir $npm_package_config_dist/js --out-file app.dist.js",
         "images": "imagemin $npm_package_config_assets/images/* --out-dir=dist/assets/images",
         "copy": "copyfiles -u 1 app/**/*.{css,html,otf,ttf,woff2,jpg} dist/",
         "copy:html": "copyfiles -u 1 app/**/*.html dist/",
         "browsersync": "browser-sync start --config=config/browsersync.js",
-        "flow:watch": "flow-watch",
         "watch:html": "export SHELL=bash && chokidar \"app/**/*.html\" -c \"npm run copy:html\"",
-        "watch:scss": "export SHELL=bash && chokidar \"$npm_package_config_assets/scss/**/*.scss\" -c \"npm-run-all sass-lint \"css -- --source-map-embed true\"\"",
+        "watch:scss": "export SHELL=bash && chokidar \"$npm_package_config_assets/scss/**/*.scss\" -c \"npm-run-all \"css -- --source-map-embed true\"\"",
         "setup": "mkdirp $npm_package_config_dist/js",
-        "sass-lint": "sass-lint -c config/.sass-lint.yml \"$npm_package_config_assets/scss/**/*.scss\" -v -q",
         "postcss": "postcss $npm_package_config_dist/css --config ./config --verbose --replace",
-        "prebuild": "npm-run-all setup sass-lint",
-        "build": "npm-run-all svgsprite --parallel \"css -- --output-style compressed\" js:browserify",
+        "prebuild": "npm-run-all setup",
+        "build": "npm-run-all svgsprite --parallel \"css -- --output-style compressed\" js:build",
         "postbuild": "npm-run-all copy size postcss",
-        "httpserver": "http-server dist",
         "prewatch": "npm-run-all setup css build",
-        "watch": "npm-run-all --parallel browsersync watch:scss watch:html js:watchify httpserver",
-        "postinstall": "nsp check --output summary"
+        "watch": "npm-run-all --parallel browsersync watch:scss watch:html js:watch"
     },
     "author": "",
     "license": "ISC"

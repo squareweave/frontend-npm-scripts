@@ -12,5 +12,10 @@
         "symbol": {
             "sprite": "svg-sprite.svg"
         }
+    },
+     "shape": {
+        "id": {
+            "generator": "svg-icon-%s"
+        }
     }
 }

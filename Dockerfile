@@ -1,16 +1,13 @@
-FROM node:9.0
+FROM node:13.1
 
 ENV NPM_CONFIG_LOGLEVEL=warn
 
 WORKDIR /app/
 
-COPY package.json yarn.lock .editorconfig /app/
+COPY package.json package-lock.json .editorconfig /app/
 COPY config /app/config
 
-RUN npm install --global yarn && \
-    yarn && \
-    yarn cache clean && \
-    true
+RUN npm install
 
 COPY . /app
 

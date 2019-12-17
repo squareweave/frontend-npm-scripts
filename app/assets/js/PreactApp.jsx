@@ -1,8 +1,7 @@
+import { h } from 'preact';
 import React from 'react';
 import { render } from 'react-dom';
-import "preact/devtools";
-
-import Inputs from "./components/Inputs";
+import Inputs from './components/Inputs';
 
 export default class PreactApp {
     constructor($div) {
@@ -10,6 +9,6 @@ export default class PreactApp {
             text: $div.data('text')
         };
         console.log(this.state);
-        render((<Inputs {...this.state} />), $div[0]);
+        render(<Inputs {...this.state} />, $div[0]);
     }
 }
