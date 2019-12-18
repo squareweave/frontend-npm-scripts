@@ -3,16 +3,18 @@ version: '2'
 services:
     web:
         ports:
-            - '3000:3000'
             - '3001:3001'
             - '80:8080'
         command: 'npm run watch'
         volumes:
             - "./app:/app/app"
+            - "./assets:/app/assets"
             - "./dist:/app/dist"
             - "./config:/app/config"
             - "./package.json:/app/package.json"
             - "./package-lock.json:/app/package-lock.json"
             - "./.editorconfig:/app/.editorconfig"
+            - "./.eslintrc.js:/app/.eslintrc.js"
+            - "./.stylelintrc.js:/app/.stylelintrc.js"
         build:
             context: .

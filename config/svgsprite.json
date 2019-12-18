@@ -1,5 +1,5 @@
 {
-    "dest": "dist/assets/images/sprite",
+    "dest": ".built/frontend/images/sprite",
     "log": "info",
     "svg": {
       "rootAttributes": {
