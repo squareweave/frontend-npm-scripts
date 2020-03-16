@@ -39,7 +39,7 @@
         "metalsmith-permalinks": "^2.2.0",
         "metalsmith-rename": "^1.0.0",
         "metalsmith-templates": "^0.7.0",
-        "minimist": "^1.2.0",
+        "minimist": "^1.2.2",
         "mkdirp": "^0.5.1",
         "modernizr": "^3.8.0",
         "node-sass": "^4.13.0",
